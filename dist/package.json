@@ -8,8 +8,7 @@
   "icon": "extension-icon.png",
   "scripts": {
     "dev": "ray develop",
-    "build": "ray build --output dist && npm run sync",
-    "sync": "rsync -rti ~/.config/raycast/extensions/badges/ dist"
+    "build": "ray build --output dist"
   },
   "dependencies": {
     "@raycast/api": "^1.103.6",
