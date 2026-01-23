@@ -5,7 +5,7 @@
     "": {
       "name": "badges",
       "dependencies": {
-        "@raycast/api": "^1.104.2",
+        "@raycast/api": "^1.104.3",
         "@raycast/utils": "^2.2.2",
       },
       "devDependencies": {
@@ -110,7 +110,7 @@
 
     "@oclif/plugin-not-found": ["@oclif/plugin-not-found@3.2.73", "", { "dependencies": { "@inquirer/prompts": "^7.10.1", "@oclif/core": "^4.8.0", "ansis": "^3.17.0", "fast-levenshtein": "^3.0.0" } }, "sha512-2bQieTGI9XNFe9hKmXQjJmHV5rZw+yn7Rud1+C5uLEo8GaT89KZbiLTJgL35tGILahy/cB6+WAs812wjw7TK6w=="],
 
-    "@raycast/api": ["@raycast/api@1.104.2", "", { "dependencies": { "@oclif/core": "^4.5.4", "@oclif/plugin-autocomplete": "^3.2.35", "@oclif/plugin-help": "^6.2.33", "@oclif/plugin-not-found": "^3.2.68", "@types/node": "22.13.10", "@types/react": "19.0.10", "esbuild": "^0.25.10", "react": "19.0.0" }, "peerDependencies": { "react-devtools": "6.1.1" }, "optionalPeers": ["react-devtools"], "bin": { "ray": "bin/run.js" } }, "sha512-y2LNulxmKGUUoq/yC3LXYkgmGoUO1FPjg/tWZAqYKdj0h+/pLxplzascSIep22jgYZmpnSUVGBQMBAD7NlCFwQ=="],
+    "@raycast/api": ["@raycast/api@1.104.3", "", { "dependencies": { "@oclif/core": "^4.5.4", "@oclif/plugin-autocomplete": "^3.2.35", "@oclif/plugin-help": "^6.2.33", "@oclif/plugin-not-found": "^3.2.68", "@types/node": "22.13.10", "@types/react": "19.0.10", "esbuild": "^0.25.10", "react": "19.0.0" }, "peerDependencies": { "react-devtools": "6.1.1" }, "optionalPeers": ["react-devtools"], "bin": { "ray": "bin/run.js" } }, "sha512-ud3c2csFd3VywjqDuY33U184ZmbAJmY+Z7qYpiMOOAzDZye49ZE7Qjw4s/2Vob+LCLX/XduzWpVFv5omdfNThQ=="],
 
     "@raycast/utils": ["@raycast/utils@2.2.2", "", { "dependencies": { "dequal": "^2.0.3" }, "peerDependencies": { "@raycast/api": ">=1.99.4", "react": ">=19.0.0" }, "optionalPeers": ["react"] }, "sha512-tZcyWCHZvz4L/i1CGEnSZkBoK6wwX1pzlTKjcWWugbrQyG0QCMOxjKJfRC/iNkD+hHaqhMWUj4Y0LNo/NknvFw=="],
 
