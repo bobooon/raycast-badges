@@ -6,20 +6,20 @@ import { deleteBadge, getStorage } from './utils/storage.ts'
 
 export default function Manage() {
   const { push } = useNavigation()
-  const [loaded, setLoaded] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
   const [badges, setBadges] = useState<Badge[]>([])
 
   useEffect(() => {
     (async () => {
       setBadges(await getStorage())
-      setLoaded(true)
+      setIsLoading(false)
     })()
   }, [])
 
   const reload = async () => setBadges(await getStorage())
 
   return (
-    <List isLoading={!loaded}>
+    <List isLoading={isLoading}>
       {badges.map(badge => (
         <List.Item
           key={badge.app.bundleId}

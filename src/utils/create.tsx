@@ -5,19 +5,19 @@ import { addBadge, getApps } from './storage.ts'
 
 export function Create(props: { onSubmit: () => Promise<void> }) {
   const { pop } = useNavigation()
-  const [loaded, setLoaded] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
   const [apps, setApps] = useState<BadgeApplication[]>([])
 
   useEffect(() => {
     (async () => {
       setApps(await getApps())
-      setLoaded(true)
+      setIsLoading(false)
     })()
   }, [])
 
   return (
     <Form
-      isLoading={!loaded}
+      isLoading={isLoading}
       navigationTitle="Create Badge"
       actions={(
         <ActionPanel>

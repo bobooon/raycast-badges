@@ -5,13 +5,13 @@ import { useEffect, useState } from 'react'
 import { getState } from './utils/state.ts'
 
 export default function Menu() {
-  const [loaded, setLoaded] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
   const [badges, setBadges] = useCachedState<BadgeState[]>('menu', [])
 
   useEffect(() => {
     (async () => {
       setBadges(await getState())
-      setLoaded(true)
+      setIsLoading(false)
     })()
   }, [setBadges])
 
@@ -20,7 +20,7 @@ export default function Menu() {
 
   return (
     <MenuBarExtra
-      isLoading={!loaded}
+      isLoading={isLoading}
       title={total ? `${total}` : ''}
       icon={{
         source: total ? 'bell-ring.svg' : 'bell.svg',
